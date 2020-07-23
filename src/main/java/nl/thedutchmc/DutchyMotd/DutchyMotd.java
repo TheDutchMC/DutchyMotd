@@ -1,6 +1,9 @@
 package nl.thedutchmc.DutchyMotd;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import nl.thedutchmc.DutchyMotd.EventListeners.PlayerLoginEventListener;
 
 public class DutchyMotd extends JavaPlugin {
 
@@ -16,6 +19,7 @@ public class DutchyMotd extends JavaPlugin {
 
 		if(!this.isEnabled()) return;
 		
+		Bukkit.getPluginManager().registerEvents(new PlayerLoginEventListener(), this);
 	}
 	
 }

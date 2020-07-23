@@ -1,0 +1,11 @@
+#The motd to be displayed to players when they log on.
+motd: "Welcome to my server {PLAYER}! It is currently {TIME} in-game!"
+
+#The color of the motd in hex, excluding the pound/hashtag symbol!
+motdBaseColor: "FFDF00"
+
+#The color of the variables in the motd in hex, excluding the pound/hashtag symbol!
+motdVariableColor: "FF0000"
+
+#Is the motd enabled
+motdEnabled: "true"
